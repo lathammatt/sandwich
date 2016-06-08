@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script src="/javascripts/SandwichMaker.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="/javascripts/bread.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="/javascripts/meat.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="/javascripts/cheese.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="/javascripts/veggies.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="/javascripts/condiments.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="/javascripts/DOMHandler.js" type="text/javascript" charset="utf-8" async defer></script>
+
+</head>
+<body>
+	<!-- bread, meat, cheese, condiments, veggies -->
+	<section id="bread">
+		<legend><h2>Bread</h2></legend>
+		<label for="bread">White</label>
+		<input type="radio" name="bread" value="white" placeholder="">
+		
+		<label for="bread">Wheat</label>
+		<input type="radio" name="bread" value="wheat" placeholder="">
+
+		<label for="toasted">Toasted?</label>
+		<input type="checkbox" name="toasted" value="toasted">
+	</section>
+	<section id="meat">
+		<legend><h2>Meat</h2></legend>
+		<input type="checkbox" name="roast_beef" value="roast_beef">Roast Beef
+		<input type="checkbox" name="chicken" value="chicken">Chicken
+		<input type="checkbox" name="ham" value="ham">Ham
+		<input type="checkbox" name="turkey" value="turkey">Turkey
+		<input type="checkbox" name="bacon" value="bacon">Bacon
+		<input type="checkbox" name="none" value="none">None
+	</section>
+	<section id="cheese">
+		<legend><h2>Cheese</h2></legend>
+		<input type="checkbox" name="american" value="american">American
+		<input type="checkbox" name="swiss" value="swiss">Swiss
+		<input type="checkbox" name="cheddar" value="cheddar">Cheddar
+		<input type="checkbox" name="mozzarella" value="mozzarella">Mozzarella
+		<input type="checkbox" name="provolone" value="provolone">Provolone
+		<input type="checkbox" name="none" value="none">None
+	</section>
+	<section id="veggies">
+		<legend><h2>Veggies</h2></legend>
+		<input type="checkbox" name="lettuce" value="lettuce">Lettuce
+		<input type="checkbox" name="olives" value="olives">Black Olives
+		<input type="checkbox" name="spinach" value="spinach">Spinach
+		<input type="checkbox" name="cucumbers" value="cucumbers">Cucumbers
+		<input type="checkbox" name="pickles" value="pickles">Pickles	
+		<input type="checkbox" name="none" value="none">None
+	</section>
+	<section id="conds">
+		<legend><h2>Condiments</h2></legend>
+		<select id="condiments">
+			<option value="none">Select Condiment</option>
+			<option value="regular_must">Regular Mustard</option>
+			<option value="spicy_must">Spicy Mustard</option>
+			<option value="honey_must">Honey Mustard</option>
+			<option value="ketchup">Ketchup</option>
+			<option value="ranch">Ranch Dressing</option>
+			<option value="a1">A1</option>
+			<option value="heinz57">Heinz 57</option>
+		</select>	
+	</section>
+	<section>
+		
+	</section>
+
+	<!-- dom element for final order -->
+	<section>
+		<h1>Sandwich Total</h1>
+		<button type="select" id="totalbutton">Tally Ho</button>
+		<div id="finaltally"></div>
+	</section>
+</body>
+</html>
